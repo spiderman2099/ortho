@@ -29,7 +29,7 @@ body
 	font-family: Palatino Linotype, Arial, Sans-Serif;
 	font-size: small;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
@@ -68,7 +68,8 @@ label
 {
 	color: #000000;
 	font-family: Palatino Linotype, Arial, Sans-Serif;
-	font-weight: 600;
+  font-weight: 600;
+  font-size: larger;
 	margin: 0px;
 	padding: 0px;
 }
@@ -85,7 +86,7 @@ em
 	font-size: larger;
 }
 
-/* Sigin In Form CSS*/
+/* Sigin In Form CSS */
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -120,4 +121,45 @@ em
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* Running Clock CSS */
+.clock {
+  height: 100px;
+  width: 70%;
+  line-height: 100px;  
+  margin: 150px auto 0;
+  padding: 0 50px;
+  background: #222;
+  color: #eee;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 7px #222;
+  text-shadow: 0 0 3px #fff;
+}
+
+/* Footer In Form CSS */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #58595B;
+}
+.footer-text {
+  color: #FFFFFF;
+  margin-top: 10px;
+}
   
+
+/* Action and Label CSS */
+.page_label
+{
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.action_button_offset
+{
+  margin-top: 0px;
+}

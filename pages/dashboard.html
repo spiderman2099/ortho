@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SMILE Dashboard</title>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/smile.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- Custom javascript for running clock -->
+    <script src="../js/clock.js"></script>
+  </head>
+
+  <body onload=display_running_clock();>
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+          <a id="lblSmile"class="navbar-brand"><b>SMILE</b>&nbsp;Orthodontic Practice Management</a>
+        </div>
+        <div id="divUser" class="navbar-brand col-md-4">
+          <span id="lblUser" style="float: right;">Marc Ausubel (Admin)&nbsp;&nbsp;<button class="btn btn-xs btn-danger" style="vertical-align: 2px">Logout</button></span>
+        </div>
+        <div id="navbar" class="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right navbar-brand">
+            <li><span id="jsClock"></span>&nbsp;&nbsp;</li>
+          </ul>
+        </div>
+      </nav>  
+
+    <div class="container">
+      <div id="divBreadcrumb" class="col-md-8">
+        <a href="#" id="lblBreadcrumb">Dashboard</a>
+      </div>
+      <div class="col-md-2">
+          <button id="btnNewPatient" type="button" class="btn btn-xs btn-success btn-block action_button_offset">Create New Patient</button>
+      </div>
+      <div class="col-md-2">
+          <button id="btnNewPatient" type="button" class="btn btn-xs btn-info btn-block action_button_offset">Run Report(s)</button>
+      </div>      
+    </div>
+
+    <hr style="margin-bottom:15px !important; margin-top:15px !important; " />
+
+    <div class="container">
+      <div class="col-md-2">
+          <button id="btnTodaysPatients" type="button" class="btn btn-md btn-default btn-block active selected">Today's Patients</button>
+      </div>
+      <div class="col-md-2">
+          <button id="btnTodaysPatients" type="button" class="btn btn-md btn-default btn-block">Call List</button>
+      </div>
+      <div class="col-md-2">
+          <button id="btnTodaysPatients" type="button" class="btn btn-md btn-default btn-block">All Patients</button>
+      </div>
+      <div class="col-md-6">
+        <input id="txtSearch" type="text" class="form-control" placeholder="Patient Search">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-12" style="margin-top:10px;">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Patient Name</th>
+              <th>Next Appointment</th>
+              <th>Phone Number</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Steve Neuschotz</td>
+              <td>Nov 20, 2018 9:45 AM</td>
+              <td>(818) 438-1444</td>
+              <td><button id="btnView" type="button" class="btn btn-xs btn-primary">View Profile</button>&nbsp;<button id="btnView" type="button" class="btn btn-xs btn-success action_button_offset">Reschedule Appt</button></td>
+            </tr>
+            <tr>
+              <td>John Smith</td>
+              <td>Nov 20, 2018 10:15 AM</td>
+              <td>(233) 433-4324</td>
+              <td><button id="btnView" type="button" class="btn btn-xs btn-primary">View Profile</button>&nbsp;<button id="btnView" type="button" class="btn btn-xs btn-success action_button_offset">Reschedule Appt</button></td>
+            </tr>
+            <tr>
+              <td>Mary Thompson</td>
+              <td>Nov 20, 2018 10:45 AM</td>
+              <td>(213) 324-3243</td>
+              <td><button id="btnView" type="button" class="btn btn-xs btn-primary">View Profile</button>&nbsp;<button id="btnView" type="button" class="btn btn-xs btn-success action_button_offset">Reschedule Appt</button></td>
+            </tr>                          
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <h5 class="footer-text">Developed by Orcastructure LLC ~ &copy;&nbsp;2018</h5>
+        </div>
+    </footer>
+  </body>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/moment.min.js"></script>
+</html>
